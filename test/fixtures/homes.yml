@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  home_text: MyText
+  sales_box_01_head: MyText
+  sales_box_01_text: MyText
+  sales_box_02_head: MyText
+  sales_box_02_text: MyText
+  sales_box_03_head: MyText
+  sales_box_03_text: MyText
+
+two:
+  home_text: MyText
+  sales_box_01_head: MyText
+  sales_box_01_text: MyText
+  sales_box_02_head: MyText
+  sales_box_02_text: MyText
+  sales_box_03_head: MyText
+  sales_box_03_text: MyText

@@ -11,7 +11,62 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415185508) do
+ActiveRecord::Schema.define(:version => 20130415194809) do
+
+  create_table "books", :force => true do |t|
+    t.text     "title"
+    t.text     "stubtitle"
+    t.text     "description"
+    t.text     "link"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "homes", :force => true do |t|
+    t.text     "home_text"
+    t.text     "sales_box_01_head"
+    t.text     "sales_box_01_text"
+    t.text     "sales_box_02_head"
+    t.text     "sales_box_02_text"
+    t.text     "sales_box_03_head"
+    t.text     "sales_box_03_text"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  create_table "other_categories", :force => true do |t|
+    t.string   "type"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "other_category_objects", :force => true do |t|
+    t.text     "title"
+    t.text     "description"
+    t.text     "date"
+    t.text     "category"
+    t.text     "link"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "publications", :force => true do |t|
+    t.text     "title"
+    t.text     "publication_description"
+    t.string   "date"
+    t.text     "link"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  create_table "user_details", :force => true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "birthday"
+    t.text     "bio"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
