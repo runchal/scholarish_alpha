@@ -1,0 +1,12 @@
+<% if user_signed_in? %>
+  <p>Signed in as... <%= current_user.email %></p>
+<% else %>
+  <p>This is way more fun if you're signed in. But you're not.<p>
+<% end %>
+
+  <p><%= @user_detail.first_name %></p>
+  <p><%= @user_detail.last_name %></p>
+  <p><%= @user_detail.birthday %></p>
+  <p><%= @user_detail.bio %></p>
+  <p>Created by: <%= @user_detail.user.email %></p>
+  <p><%= link_to 'Edit this page', @user_detail %></p>

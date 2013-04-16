@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130415194809) do
+ActiveRecord::Schema.define(:version => 20130416013213) do
 
   create_table "books", :force => true do |t|
     t.text     "title"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20130415194809) do
     t.text     "link"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "user_id"
   end
 
   create_table "homes", :force => true do |t|
@@ -32,12 +33,14 @@ ActiveRecord::Schema.define(:version => 20130415194809) do
     t.text     "sales_box_03_text"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+    t.integer  "user_id"
   end
 
   create_table "other_categories", :force => true do |t|
     t.string   "type"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
   end
 
   create_table "other_category_objects", :force => true do |t|
@@ -57,6 +60,7 @@ ActiveRecord::Schema.define(:version => 20130415194809) do
     t.text     "link"
     t.datetime "created_at",              :null => false
     t.datetime "updated_at",              :null => false
+    t.integer  "user_id"
   end
 
   create_table "user_details", :force => true do |t|
@@ -66,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20130415194809) do
     t.text     "bio"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|

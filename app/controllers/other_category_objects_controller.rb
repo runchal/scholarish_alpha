@@ -1,0 +1,2 @@
+class OtherCategoryObjectsController < ApplicationController
+end

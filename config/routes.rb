@@ -1,10 +1,17 @@
 ScholarishAlpha::Application.routes.draw do
 
+  resources :homes do
+    collection do
+      get 'showall'
+    end
+  end
+
+  resource :user_detail
+
   devise_for :users
 
-  root to: "home#index"
+  root to: "homes#index"
   
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

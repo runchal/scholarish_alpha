@@ -1,0 +1,11 @@
+	<ul>
+		<% @home.errors.full_messages.each do |message| %>
+			<li><%= message %>
+		<% end %>
+	</ul>
+
+	<%= form.label :home_text, "What's your title?" %><br>
+	<%= form.text_area :home_text, placeholder:"Why do you deserve to be listened to?" %>
+	<br>
+	<br>
+	<%= form.submit %>

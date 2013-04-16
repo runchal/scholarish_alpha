@@ -1,0 +1,20 @@
+	<ul>
+		<% @user_detail.errors.full_messages.each do |message| %>
+			<li><%= message %>
+		<% end %>
+	</ul>
+
+	<%= form.label :first_name, "What's your First Name?" %><br>
+	<%= form.text_field :first_name, placeholder:"First Name?" %>
+	<br>
+	<%= form.label :last_name, "Last Name?" %><br>
+	<%= form.text_field :last_name, placeholder:"Last Name?" %>
+	<br>
+	<%= form.label :birthday, "Birthday" %><br>
+	<%= form.text_field :birthday, placeholder:"Enter your birthday" %>
+	<br>
+	<%= form.label :bio, "enter your bio?" %><br>
+	<%= form.text_area :bio, placeholder:"Tell me about yourself?" %>
+	<br>
+	
+	<%= form.submit %>

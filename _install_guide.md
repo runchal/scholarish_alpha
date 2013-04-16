@@ -11,5 +11,11 @@
     * UserDetail: first_name last_name birthday bio photo
     * Home: home_text sales_box_01_headline sales_box_01_text sales_box_02:headline sales_box_02:text sales_box_03:headline sales_box_03:text photo(add later using carrierwave?)
     * Publication: title publication_description date link pdf (use carrierwave for pdf?) 
-    * Book: title subtitle description photo sales_link
-    * Other: title description date category link
+    * Book: title subtitle description photo link
+    * OtherCategory: type:string
+    * OtherCategoryObject title:text description:text date:text category:text link:text
+
+10. Generate the models using rails g model.
+11. Add the appropriate routes
+12. Add controllers and views
+13. 
