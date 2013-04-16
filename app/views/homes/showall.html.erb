@@ -1,0 +1,8 @@
+<% @homes.reverse_each do |home| %>
+  <h1><%= home.home_text %></h1>
+  <p><%= link_to 'Permalink', home %>
+  <%= home.updated_at %></p>
+<% end %>
+
+<p><%= link_to 'Create a home page', new_home_path if user_signed_in? %></p>
+<p><%= link_to 'Back to All Pages', homes_url if user_signed_in? %></p>
