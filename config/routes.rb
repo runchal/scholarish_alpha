@@ -8,6 +8,8 @@ ScholarishAlpha::Application.routes.draw do
 
   resource :user_detail
 
+  resources :publications
+
   devise_for :users
 
   root to: "homes#index"
