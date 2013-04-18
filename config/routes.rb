@@ -13,7 +13,7 @@ ScholarishAlpha::Application.routes.draw do
   resources :books
 
   resources :other_categories do
-    resources: other_category_objects
+    resources :other_category_objects
   end
 
   devise_for :users
