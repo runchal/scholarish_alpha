@@ -8,7 +8,7 @@ gem "carrierwave", "~> 0.8.0"
 
 gem "rmagick"
 
-gem "sqlite3", group: :development
+gem "sqlite3", group: :development  
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
