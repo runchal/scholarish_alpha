@@ -1,12 +1,6 @@
-<% if user_signed_in? %>
-  <p>Signed in as... <%= current_user.email %></p>
-<% else %>
-  <p>This is way more fun if you're signed in. But you're not.<p>
+<% @other_categories.each do |other_category| %>
+  <h2><%= other_category.type %></h2>
+  <p><%= link_to 'Edit this type', edit_other_category_path(other_category) if user_signed_in? %></p>
 <% end %>
 
-  <h1><%= @homes.last.home_text %></h1>
-  <p>Created by: <%= @homes.last.user.email %></p>
-  <p><%= link_to 'Edit this page', @homes.last %></p>
-  <p><%= link_to 'See all pages', showall_homes_path %>
-
-<p><%= link_to 'Create a home page', new_home_path if user_signed_in? %></p>
+<p><%= link_to 'Create a other_category', new_other_category_path if user_signed_in? %></p>
