@@ -13,7 +13,7 @@ gem "sqlite3", group: :development
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development do
+group :production do
   gem "pg"
 end
 
