@@ -1,9 +1,9 @@
-<h1><%= @home.home_text %></h1>
+<h1><%= @book.home_text %></h1>
 
 <hr>
 <% if user_signed_in? %>
-<% if @home.user.email == current_user.email %>
-  <%= link_to "edit this", edit_home_path %>
+<% if @book.user.email == current_user.email %>
+  <%= link_to "edit this", edit_book_path %>
 <% end %>
 <% end %>
 
@@ -11,4 +11,4 @@
 <br>
 <hr>
 
-<%= link_to 'Home', homes_path %>
+<%= link_to 'Home', bookss_path %>

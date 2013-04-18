@@ -17,5 +17,5 @@
 
 10. Generate the models using rails g model.
 11. Add the appropriate routes
-12. Add controllers and views
+12. Add controllers and views (there's a bunch of bullshit with singular model associations that I don't understand)
 13. 

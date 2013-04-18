@@ -17,13 +17,11 @@ class PublicationsController < ApplicationController
   def create
     @publication = current_user.publications.build(params[:publication])
 
-    respond_to do |format|
       if @publication.save
-        format.html { redirect_to publications_url, notice: 'Your publication was created.' }
+        redirect_to publications_url, notice: 'Your publication was created.'
       else
-        format.html { render action: "edit" }
+        render action: "edit"
       end
-    end
   end
 
   def show
@@ -42,6 +40,13 @@ class PublicationsController < ApplicationController
     else
       render action: "edit"
     end
+  end
+
+  def destroy
+    @publication = current_user.publications.find(params[:id])
+    @publication.destroy
+
+    redirect_to publications_url
   end
 
 end

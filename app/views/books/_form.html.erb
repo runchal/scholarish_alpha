@@ -1,11 +1,20 @@
 	<ul>
-		<% @home.errors.full_messages.each do |message| %>
+		<% @book.errors.full_messages.each do |message| %>
 			<li><%= message %>
 		<% end %>
 	</ul>
 
-	<%= form.label :home_text, "What's your title?" %><br>
-	<%= form.text_area :home_text, placeholder:"Why do you deserve to be listened to?" %>
+	<%= form.label :title, "What's your title?" %><br>
+	<%= form.text_area :title, placeholder:"Why do you deserve to be listened to?" %>
+	<br>
+	<%= form.label :stubtitle, "What's your title?" %><br>
+	<%= form.text_area :stubtitle, placeholder:"Why do you deserve to be listened to?" %>
+	<br>
+	<%= form.label :description, "What's your title?" %><br>
+	<%= form.text_area :description, placeholder:"Why do you deserve to be listened to?" %>
+	<br>
+	<%= form.label :link, "What's your title?" %><br>
+	<%= form.text_area :link, placeholder:"Why do you deserve to be listened to?" %>
 	<br>
 	<br>
 	<%= form.submit %>

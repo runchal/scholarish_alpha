@@ -1,12 +1,9 @@
-<% if user_signed_in? %>
-  <p>Signed in as... <%= current_user.email %></p>
-<% else %>
-  <p>This is way more fun if you're signed in. But you're not.<p>
+<% @books.each do |book| %>
+  <h2><%= book.title %></h2>
+  <p><%= book.stubtitle %></p>
+  <p><%= book.description %></p>
+  <p><%= book.link %></p>
+  <p><%= link_to 'Edit this book', edit_book_path(book) if user_signed_in? %></p>
 <% end %>
 
-  <h1><%= @homes.last.home_text %></h1>
-  <p>Created by: <%= @homes.last.user.email %></p>
-  <p><%= link_to 'Edit this page', @homes.last %></p>
-  <p><%= link_to 'See all pages', showall_homes_path %>
-
-<p><%= link_to 'Create a home page', new_home_path if user_signed_in? %></p>
+<p><%= link_to 'Create a book', new_book_path if user_signed_in? %></p>

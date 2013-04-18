@@ -1,11 +1,11 @@
 	<ul>
-		<% @home.errors.full_messages.each do |message| %>
+		<% @other_category.errors.full_messages.each do |message| %>
 			<li><%= message %>
 		<% end %>
 	</ul>
 
-	<%= form.label :home_text, "What's your title?" %><br>
-	<%= form.text_area :home_text, placeholder:"Why do you deserve to be listened to?" %>
+	<%= form.label :type, "What's the type of page you want to make?" %><br>
+	<%= form.text_area :type, placeholder:"Book or Title or Publications" %>
 	<br>
 	<br>
 	<%= form.submit %>

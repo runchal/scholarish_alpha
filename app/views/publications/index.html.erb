@@ -1,15 +1,9 @@
-<% if user_signed_in? %>
-  <p>Signed in as... <%= current_user.email %></p>
-<% else %>
-  <p>This is way more fun if you're signed in. But you're not.<p>
-<% end %>
-
 <% @publications.each do |publication| %>
   <h2><%= publication.title %></h2>
   <p><%= publication.publication_description %></p>
   <p><%= publication.date %></p>
   <p><%= publication.link %></p>
-  <p><%= link_to 'Edit this page', edit_publication_path(publication) if user_signed_in? %></p>
+  <p><%= link_to 'Edit this publication', edit_publication_path(publication) if user_signed_in? %></p>
 <% end %>
 
 <p><%= link_to 'Create a publication', new_publication_path if user_signed_in? %></p>

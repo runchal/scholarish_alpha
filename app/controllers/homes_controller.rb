@@ -48,4 +48,11 @@ before_filter :authenticate_user!, except: [:index, :show]
     end
   end
 
+  def destroy
+    @home = current_user.homes.find(params[:id])
+    @home.destroy
+
+    redirect_to homes_url
+  end
+
 end
