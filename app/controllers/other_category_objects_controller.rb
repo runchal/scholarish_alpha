@@ -17,7 +17,7 @@ class OtherCategoryObjectsController < ApplicationController
     if @other_category.save
       redirect_to @other_categories_url, notice: 'Nice new thing dude'
     else
-      action: "new"
+      render action: "new"
     end
   end
 
