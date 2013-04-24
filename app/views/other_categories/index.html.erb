@@ -1,5 +1,5 @@
 <% @other_categories.each do |other_category| %>
-  <h2><%= other_category.type %></h2>
+  <h2><%= other_category.other_category_type %></h2>
   <p><%= link_to 'Edit this type', edit_other_category_path(other_category) if user_signed_in? %></p>
 <% end %>
 
