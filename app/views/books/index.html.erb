@@ -1,9 +1,30 @@
-<% @books.each do |book| %>
-  <h2><%= book.title %></h2>
-  <p><%= book.stubtitle %></p>
-  <p><%= book.description %></p>
-  <p><%= book.link %></p>
-  <p><%= link_to 'Edit this book', edit_book_path(book) if user_signed_in? %></p>
-<% end %>
 
-<p><%= link_to 'Create a book', new_book_path if user_signed_in? %></p>
+<div class="grid_10 push_1">
+<!--      <hr id="book_spacer" /> -->
+    <ul class="book_nav">
+  <% @books.each do |book| %>
+    <span><li><%= link_to book.title, book_path(book) %></li></span>
+  <% end %>
+    </ul>
+  <hr id="book_spacer" />
+</div>
+
+<div class="clear"></div>
+
+<div class = "push_1">
+<% @books.each do |book| %>
+  <div class = "grid_5">
+    <h2><%= book.title %></h2>
+    <p><%= book.stubtitle %></p>
+    <p><%= link_to 'Edit this book', edit_book_path(book) if user_signed_in? %></p>
+    <div class = "spacer"></div>
+    <div class = "grid_12 spacer"></div>
+  </div>
+<% end %>
+</div>
+
+<div class = "clear"></div>
+<div class = "grid_10 push_1">
+  <p><%= link_to 'Create a book', new_book_path if user_signed_in? %></p>
+</div>
+

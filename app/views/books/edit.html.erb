@@ -6,3 +6,5 @@
 
 <%= link_to 'Show', @book %>
 <%= link_to 'Back', book_path %>
+<%= link_to 'Delete this Book', @book, method: :delete, data: { confirm: 'Are you sure?' } %>
+

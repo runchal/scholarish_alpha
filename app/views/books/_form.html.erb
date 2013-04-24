@@ -4,17 +4,17 @@
 		<% end %>
 	</ul>
 
-	<%= form.label :title, "What's your title?" %><br>
-	<%= form.text_area :title, placeholder:"Why do you deserve to be listened to?" %>
+	<%= form.label :title, "What's the name of your book?" %><br>
+	<%= form.text_area :title, placeholder:"Book Title Goes Here, Duh", size:"100x2" %>
 	<br>
-	<%= form.label :stubtitle, "What's your title?" %><br>
-	<%= form.text_area :stubtitle, placeholder:"Why do you deserve to be listened to?" %>
+	<%= form.label :stubtitle, "What's the subtitle of the book?" %><br>
+	<%= form.text_area :stubtitle, placeholder:"Book subtitle Goes Here, Duh", size:"100x2"  %>
 	<br>
-	<%= form.label :description, "What's your title?" %><br>
-	<%= form.text_area :description, placeholder:"Why do you deserve to be listened to?" %>
+	<%= form.label :description, "Tell us what your book is about." %><br>
+	<%= form.text_area :description, placeholder:"Like, a description of the book, like one that would be on the back of your book, but like, not fucking boring.", size:"100x20" %>
 	<br>
-	<%= form.label :link, "What's your title?" %><br>
-	<%= form.text_area :link, placeholder:"Why do you deserve to be listened to?" %>
+	<%= form.label :link, "Is there a sales link?" %><br>
+	<%= form.text_area :link, placeholder:"Then paste it here!", size:"100x2" %>
 	<br>
 	<br>
 	<%= form.submit %>

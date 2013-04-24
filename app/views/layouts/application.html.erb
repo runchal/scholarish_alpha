@@ -3,22 +3,53 @@
 <head>
   <title>ScholarishAlpha</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "960_12_col" %>
+  <%= stylesheet_link_tag "closedscholar" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
+<div class = "container_12">
+<div class = "grid_11 align_right">
+  <% if user_signed_in? %>
+    <%= link_to "Signed in as...", destroy_user_session_path, method: :delete %> <%= current_user.email %><div class = "grid_12 spacer"></div>
+  <% else %>
+    <%= link_to "This is way more fun if you're signed in.", new_user_session_path %><div class = "grid_12 spacer"></div>
+  <% end %>
+</div>
+</div>
+<div class = "clear"></div>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+
+    <div class="navbar_background">
+        <div class="container_12">    
+        <div class="grid_3 push_1">
+          <p id="main_logo"><a href="/"><%= @first_name %> <%= @last_name %></a></p>
+        </div>
+        <div class="navbar push_1 grid_7 align_right">
+        <ul>
+          <li class="nav"><a href="/publications">Publications</a></li>
+          <li class="nav"><a href="/books">Books</a></li>
+          <li class="nav"><a href="/media"><%= @other_category_title_one %></a></li>
+          <li class="nav"><a href="/cv">CV</a></li>
+          <li class="nav"><a href="/user_details/index">Bio</a></li>
+          <li class="nav"><a href="mailto:trygve@trygve.com">Contact</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
 
 
-<% if user_signed_in? %>
-  <%= link_to "Signed in as...", destroy_user_session_path, method: :delete %> <%= current_user.email %>
-<% else %>
-  <%= link_to "This is way more fun if you're signed in.", new_user_session_path %>
-<% end %>
 
-<%= yield %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 
-</body>
+<div class="container_12">
+  <%= yield %>
+</div>
+
+  </body>
+
+  </div>
 </html>

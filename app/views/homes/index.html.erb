@@ -1,6 +1,10 @@
-<h1><%= @homes.last.home_text %></h1>
-<p>Created by: <%= @homes.last.user.email %></p>
-<p><%= link_to 'Edit this page', @homes.last %></p>
-<p><%= link_to 'See all pages', showall_homes_path %>
 
-<p><%= link_to 'Create a home page', new_home_path if user_signed_in? %></p>
+<div id="sales_text" class="grid_10 push_1">
+  <p><%= @homes.last.home_text %></p>
+</div>
+
+<div class = "clear"></div>
+
+<div class = "grid_10 push_1 align_right"
+  <p><%= link_to 'Edit this page', @homes.last if user_signed_in? %> <%= link_to 'See all pages', showall_homes_path if user_signed_in? %> <%= link_to 'Create a home page', new_home_path if user_signed_in? %></p>
+</div>

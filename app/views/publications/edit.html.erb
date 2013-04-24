@@ -1,8 +1,11 @@
-<h1>Edit this fucking post</h1>
+<h1 class = "grid_10 push_1">Edit this fucking post</h1>
 
+<div class = "grid_10 push_1">
 <%= form_for @publication do |form| %>
 	<%= render form %>
 <% end %>
+</div>
 
+<div class = "clear"></div>
 <%= link_to 'Show', @publication %>
 <%= link_to 'Back', publications_path %>

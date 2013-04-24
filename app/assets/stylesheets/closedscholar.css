@@ -1,0 +1,621 @@
+	
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	html {
+		overflow-y: scroll;
+	}
+	
+	body{
+/* 		background-image: url(/graphics/backgrounds/cream_dust_@2X.png); */
+		background-color: #f8f8f2;
+	}
+	
+/*
+	.spacer {
+		margin-top: 30px;
+		border-bottom: #e7e7e7 1px dashed;
+	}
+*/
+	
+	#main_logo a {
+		display: inline-block;
+		font-family: 'Josefin Slab', serif;
+		font-weight: 300;
+		text-transform: uppercase;
+		padding-top: 14px;
+		font-size: 1em;
+		letter-spacing: 0.1em;
+		text-decoration: none;
+		border-bottom: none;
+	}
+	
+	a {
+		text-decoration: none;
+		text-align: right;
+		color: #c06d7b;
+		border-bottom: 1px dotted #c06d7b;
+
+	}
+	
+	
+	a:hover {
+		color: #ff0000;
+		border-bottom: 1px dotted #ff0000;
+	}
+		
+	li {
+		padding-top: 12px;
+		display: inline;
+		padding-left: .7em;
+		padding-right: .7em;
+		font-family: 'Josefin Sans', serif;
+		font-weight: 300;
+		font-size: 1em;
+		text-transform: uppercase;
+		text-align: right;
+		}
+			
+	li a {
+		text-decoration: none;
+		border-bottom: none;
+		margin-right: .7em;
+		/* color: #53777A;		 */	
+		}
+
+	li a:hover {
+/* 		padding: 10px 0px 1px 0px; */
+/*
+		color: #542437;
+		border-bottom: 1px dotted #542437;
+*/
+
+	}
+
+	li a:last-child {
+		margin-right: 0em;
+/* 		padding-right: 0em; */
+	}
+	
+	.navbar {
+		padding-top: 15px;
+		}
+
+
+	.navbar li a {
+		color: #fbfbfb;
+	}
+
+	.navbar li a:hover {
+		color: #fbfbfb;
+		border-bottom: 1px dotted #fbfbfb;
+	}
+
+
+	#main_logo a {
+		color: #fbfbfb;
+	}
+
+	.navbar_background {
+		height: 45px;
+		background-color: #778899;
+		width: 100%;
+		-moz-box-shadow: 0px 1px 3px #888;
+		-webkit-box-shadow: 0px 1px 3px #888;
+		box-shadow: 0px 1px 3px #888;
+	}
+
+
+
+	.page_title {
+		font-family: 'Josefin Slab', serif;
+		color: #474747;
+		font-weight: 100;
+		font-size: 68px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+/* 		text-shadow:transparent 0 0 0, -1px -1px 0px #ededed; */
+		
+	}
+
+	h2 a {
+		border-bottom: none;
+	}
+
+
+	hr {
+		border:0;
+		margin:0;
+		padding:0;
+		font-size:100%;
+		border-top:1px solid #e5e5e5;
+		border-bottom:1px solid #fff
+	}
+
+	#book_spacer {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.book_nav {
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: -5px;
+	}
+	
+	#current_selection {
+/* 		border-top: 1px #ff4271 solid; */
+		border-bottom: 3px #c06d7b solid;
+/* 		padding-top: 3px; */
+/* 		border-top: 3px #C02942 solid; */
+
+		color: #c06d7b;
+/* 		background: #fff9fb; */
+/* 		padding-bottom: 10px; */
+/* 		padding-left: .7em; */
+/* 		border-radius: 10px; */
+		
+	}
+
+	.navbar #current_selection {
+/* 		border-top: 1px #ff4271 solid; */
+/*
+		border-top: 3px #fbfbfb solid;
+		padding-top: 2px;
+*/
+		border-bottom: 3px #fbfbfb solid;
+/* 		padding-top: 3px; */
+/* 		border-top: 3px #C02942 solid; */
+
+		color: #fbfbfb;
+/* 		background: #fff9fb; */
+/* 		padding-bottom: 10px; */
+/* 		padding-left: .7em; */
+/* 		border-radius: 10px; */
+		
+	}
+
+
+	
+/*
+	#current_selection a:hover {
+		padding-bottom: 10px;
+		border-bottom: none;
+		
+	}
+*/
+	
+	h3 {
+		font-family: 'Josefin Sans', serif;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding-top: 10px;
+		font-size: 16px;
+		margin-top: 16px;
+		border-bottom: 1px dashed;
+		color: #717f80;
+	}
+
+	.first_category {
+		margin-top: 35px;
+		margin-bottom: 20px;
+	}
+	
+	.left_title {
+		letter-spacing: 0.1em;
+		color: #717f80;
+	}
+		
+	.publication_title {
+		font-family: 'Playfair Display', serif;
+		font-size: 26px;
+		padding-top: 10px;
+		line-height: 1.3em;
+		color: #474747;
+	}
+	
+	.publication_author {
+		font-family: 'Vollkorn', serif;
+		font-size: 18px;
+		font-style: italic;
+		margin-top: 4px;
+		margin-bottom: 0px;
+		color: #717f80;
+	}
+	
+	.publication_description {
+		font-family: 'Vollkorn', sans-serif;
+		font-size: 18px;
+		line-height: 1.7em;
+		color:#474747;
+	}
+		
+
+	h2.book_picture {
+		background: url(../graphics/images/william-james.jpg) no-repeat;
+		background-size: 300px 440px;
+		-webkit-background-size: 300px 440px;
+		-moz-background-size: 300px 440px;
+		height: 440px;
+		text-indent: -9999px;
+		margin-bottom: 10px;
+	}
+	
+	.book_title {
+		font-family: 'Playfair Display';
+		font-size: 60px;
+		font-weight: 400;
+		line-height: 1.2em;
+		color:#474747;
+/* 		text-shadow:transparent 0 0 0, -1px -1px 0px #ededed; */
+
+
+	}
+	
+	.book_subhead {
+		font-family: 'Playfair Display';
+		font-style: italic;
+		font-size: 30px;
+		font-weight: 400;
+		line-height: 1.2em;
+		margin-top: 5px;
+		color: #717f80;
+
+	}
+	
+	.book_first_paragraph {
+		font-family: 'Vollkorn' serif;
+		font-size: 24px;
+		font-weight: 400;
+		margin-top: 10px;
+		line-height: 1.3em;
+		color:#474747;
+	}
+	
+	.book_description {
+		font-family: 'Vollkorn' serif;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.5em;
+		color:#474747;
+
+	}
+	
+	.book_description p {
+		padding-top: 1em;
+		color:#474747;
+
+	}
+
+	.buy_book {
+		font-family: 'Josefin Sans';
+		text-transform: uppercase;
+		color: green;
+		letter-spacing: 0.1em;
+	}
+
+	.pull_quote {
+		font-family: "Playfair Display";
+		font-style: italic;
+		font-size: 28px;
+		font-weight: 400;
+		color:#717f80;
+
+	}
+
+	.pull_quote_author {
+		font-family: "Josefin Sans";
+		font-size: 20px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: right;
+		margin-top: 5px;
+		color:#474747;
+
+	}
+
+	.sales_text {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.6em;
+		padding-top: 16px;
+		color:#474747;
+	}
+
+	.school_name {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 18px;
+		padding-top: 18px;
+		letter-spacing: 0.1em;
+		color:#353535;
+
+	}
+
+	.employer_name_time {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 18px;
+		padding-top: 1px;
+		letter-spacing: 0.1em;
+		color:#717f80;
+
+	}
+
+
+
+	.school_name_one_line {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 18px;
+		padding-top: 36px;
+		letter-spacing: 0.1em;
+		color:#353535;
+
+	}
+
+
+
+	.research_name_second {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 18px;
+		padding-top: 10px;
+		letter-spacing: 0.1em;
+		color:#353535;
+
+	}
+
+
+	.school_location {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 18px;
+		padding-top: 18px;
+		letter-spacing: 0.1em;
+		color:#353535;
+
+	}	
+
+	.school_description {
+		font-family: 'Vollkorn', serif;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.55em;
+		padding-top: 2px;
+		color:#474747;
+
+	}	
+
+	.bio_sales_text {
+		font-family: 'Playfair Display', serif;
+		font-weight: 400;
+		font-size: 26px;
+		line-height: 1.5em;
+		padding-top: 16px;
+		color:#474747;
+		letter-spacing: 0.05em;
+	}
+	
+		.spacer {
+		margin: 10px 0px 10px 0px;
+	}	
+		
+	.sales_box {
+		margin-top: 5px;
+		margin-bottom: 50px;
+	}		
+	.sales_box h2 {
+		font-family: 'Josefin Sans', serif;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 12px;
+		color: #353535;
+
+	}
+	
+	.sales_box p {
+		font-family: 'Vollkorn', Georgia, serif;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.2em;
+		margin-top: -10px;
+		color: #474747;
+
+		padding-bottom: 10px;
+	}
+	
+	.sales_box {
+		/*
+border-bottom: 1px dashed;
+		border-top: 1px dashed;
+		border-color: #474747;
+*/
+
+	}
+	
+	#front_page_image {
+		background: url(../graphics/images/tryg_hero.jpeg) no-repeat;
+		background-size: 220px 275px;
+		-webkit-background-size: 220px 275px;
+		-moz-background-size: 220px 275px;
+		height: 275px;
+		text-indent: -9999px;
+		box-shadow: 0px 0px 10px #778899;
+/*
+		padding: 10px 10px 25px 10px;
+		background-color: aqua;
+*/
+		border-radius: 5px;
+/* 		border-radius: 50px 50px 1px 1px; */
+/* 		border-bottom: 10px black solid; */
+/*
+		-webkit-box-shadow:
+		 	inset 0 0 50px #778899,
+		 	inset 0 0 20px #778899,
+		 	inset 0 0 20px #778899;
+		 
+		-moz-box-shadow:
+		    inset 0 0 20px #778899,
+		    inset 0 0 20px #778899,
+		    inset 0 0 20px #778899;
+		 
+		box-shadow:
+		    inset 0 0 20px #778899,
+		    inset 0 0 20px #778899,
+		    inset 0 0 20px #778899;	
+*/
+		                
+		-webkit-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		position: relative;
+		right: 0px;                
+     }
+
+/*
+	#front_page_image:after  {
+		position: absolute;
+		content: ' ';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: -webkit-gradient(radial, 50% 50%, 50, 50% 50%, 100, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+		background: -moz-radial-gradient(50% 50%, circle, rgba(255,255,255,0) 100px, rgba(255,255,255,1) 100px);
+	}
+
+*/
+
+/*
+	#front_page_image:after  {
+		position: absolute;
+		content: ' ';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: -webkit-gradient(radial, 50% 50%, 50, 50% 50%, 270, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+		background: -moz-radial-gradient(50% 50%, circle, rgba(255,255,255,0) 100px, rgba(255,255,255,1) 100px);
+	}
+
+*/
+
+
+	
+/*
+	.front_page_background {
+		background: url(/graphics/images/front_page_background.jpg) no-repeat center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}	
+*/
+	
+	.front_page_image_container {
+		padding-top: 20px;
+	}
+
+	#bio_page_image {
+		background: url(../graphics/images/tryg_hero.jpeg) repeat;
+		background-size: 220px 275px;
+		-webkit-background-size: 220px 275px;
+		-moz-background-size: 220px 275px;
+		height: 275px;
+		text-indent: -9999px;
+		box-shadow: 0px 0px 10px #778899;
+/*
+		padding: 10px 10px 25px 10px;
+		background-color: aqua;
+*/
+		border-radius: 5px;
+/* 		border-radius: 50px 50px 1px 1px; */
+/* 		border-bottom: 10px black solid; */
+/*
+		-webkit-box-shadow:
+		 	inset 0 0 50px #778899,
+		 	inset 0 0 20px #778899,
+		 	inset 0 0 20px #778899;
+		 
+		-moz-box-shadow:
+		    inset 0 0 20px #778899,
+		    inset 0 0 20px #778899,
+		    inset 0 0 20px #778899;
+		 
+		box-shadow:
+		    inset 0 0 20px #778899,
+		    inset 0 0 20px #778899,
+		    inset 0 0 20px #778899;	
+*/
+		                
+		position: relative;
+		right: 0px;                
+     }
+
+/*
+	#front_page_image:after  {
+		position: absolute;
+		content: ' ';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: -webkit-gradient(radial, 50% 50%, 50, 50% 50%, 100, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+		background: -moz-radial-gradient(50% 50%, circle, rgba(255,255,255,0) 100px, rgba(255,255,255,1) 100px);
+	}
+
+*/
+
+/*
+	#front_page_image:after  {
+		position: absolute;
+		content: ' ';
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: -webkit-gradient(radial, 50% 50%, 50, 50% 50%, 270, from(rgba(255,255,255,0)), to(rgba(255,255,255,1)));
+		background: -moz-radial-gradient(50% 50%, circle, rgba(255,255,255,0) 100px, rgba(255,255,255,1) 100px);
+	}
+
+*/
+
+
+	
+/*
+	.front_page_background {
+		background: url(/graphics/images/front_page_background.jpg) no-repeat center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}	
+*/
+	
+	.bio_page_image_container {
+		padding-top: 20px;
+	}
+
+
+	#sales_text {
+		font-family: 'Playfair Display', sans-serif;
+		font-weight: 400;
+		letter-spacing: 0.03em;
+		line-height: 1.5em;
+		font-size: 26px;
+		color: #474747;
+		text-decoration: none;
+	}
+
+
+	
+	.footer {
+		margin-bottom: 25px;
+	}

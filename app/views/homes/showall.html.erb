@@ -1,8 +1,19 @@
-<% @homes.reverse_each do |home| %>
-  <h1><%= home.home_text %></h1>
-  <p><%= link_to 'Permalink', home %>
-  <%= home.updated_at %></p>
-<% end %>
-
-<p><%= link_to 'Create a home page', new_home_path if user_signed_in? %></p>
-<p><%= link_to 'Back to All Pages', homes_url if user_signed_in? %></p>
+<div class = "grid_12 spacer"></div>
+<h2 class = "grid_10 push_1">This is a list of all your front page images. Edit away, friendo.</h2>
+<div class = "grid_12 spacer"></div>
+<div class = "grid_12 spacer"></div>
+<div class = "grid_10 push_1">
+  <% @homes.reverse_each do |home| %>
+    <p><%= home.home_text %></p>
+    <p><%= link_to 'Permalink', home %>
+    <%= link_to 'Edit This'
+    <%= home.updated_at %></p>
+  </br>
+  <% end %>
+</div>
+<div class = "clear"></div>
+<div class = "grid_12 spacer"></div>
+<div class = "grid_12 spacer"></div>
+<div class = "grid_10 push_1 align_right">
+  <p><%= link_to 'Create a home page', new_home_path if user_signed_in? %> | <%= link_to 'Back to All Pages', homes_url if user_signed_in? %></p>
+</div>

@@ -1,9 +1,22 @@
+    <div class="push_4 grid_7">
+      <h2 class="page_title">Publications</h2>
+    </div>
+    
+    <div class="clear"></div>
+
+<p class = "grid_7 push_4"><%= link_to 'Create a publication', new_publication_path if user_signed_in? %></p>
+
 <% @publications.each do |publication| %>
-  <h2><%= publication.title %></h2>
-  <p><%= publication.publication_description %></p>
-  <p><%= publication.date %></p>
-  <p><%= publication.link %></p>
-  <p><%= link_to 'Edit this publication', edit_publication_path(publication) if user_signed_in? %></p>
+  <div class = "grid_7 push_4 publication_title"><p><%= publication.title %></p></div>
+  <div class = "clear"></div>
+  <div class = "grid_7 push_4 publication_author"><p><%= @first_name %> <%= @last_name%></p></div>
+  <div class = "clear"></div>
+  <div class = "grid_7 push_4 publication_description"><p><%= publication.publication_description %> <% if publication.link? %><%= link_to 'Download This Publication, Yo!', publication.link %></p><% end %></div>
+  <div class = "clear"></div>
+<!--   <div class = "grid_7 push_4"><p><%= publication.date %></p></div> -->
+  
+  <div class = "grid_7 push_4"><p><%= link_to 'Edit this publication', edit_publication_path(publication) if user_signed_in? %></p></div>
+  <div class = "grid_12 spacer"></div>
 <% end %>
 
-<p><%= link_to 'Create a publication', new_publication_path if user_signed_in? %></p>
+<div class = "clear"></div>

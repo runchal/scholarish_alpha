@@ -6,7 +6,7 @@ ScholarishAlpha::Application.routes.draw do
     end
   end
 
-  resource :user_detail
+  resources :user_details
 
   resources :publications
 
