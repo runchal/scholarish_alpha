@@ -1,6 +1,5 @@
 
 <div class="grid_10 push_1">
-<!--      <hr id="book_spacer" /> -->
     <ul class="book_nav">
   <% @books.each do |book| %>
     <span><li><%= link_to book.title, book_path(book) %></li></span>
@@ -14,7 +13,7 @@
 <div class = "push_1">
 <% @books.each do |book| %>
   <div class = "grid_5">
-    <h2><%= book.title %></h2>
+    <h2><%= link_to book.title, book_path(book) %></h2>
     <p><%= book.stubtitle %></p>
     <p><%= link_to 'Edit this book', edit_book_path(book) if user_signed_in? %></p>
     <div class = "spacer"></div>
