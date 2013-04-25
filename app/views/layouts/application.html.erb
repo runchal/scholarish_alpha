@@ -11,13 +11,17 @@
 
 <body>
 <div class = "container_12">
-<div class = "grid_11 align_right">
-  <% if user_signed_in? %>
-    <%= link_to "Signed in as...", destroy_user_session_path, method: :delete %> <%= current_user.email %><div class = "grid_12 spacer"></div>
-  <% else %>
-    <%= link_to "This is way more fun if you're signed in.", new_user_session_path %><div class = "grid_12 spacer"></div>
-  <% end %>
-</div>
+  
+    <div class = "grid_10 push_1">
+    <% if user_signed_in? %>
+      <%= link_to "Signed in as...", destroy_user_session_path, method: :delete %> <%= current_user.email %><div class = "grid_12 spacer"></div>
+    <% else %>
+      <%= link_to "This is way more fun if you're signed in.", new_user_session_path %><div class = "grid_12 spacer"></div>
+    <% end %>
+    <span class="notice"><strong><%= notice %></strong></span>
+    <span class="alert"><strong><%= alert %></strong></span>
+  </div>
+
 </div>
 <div class = "clear"></div>
 
@@ -42,8 +46,6 @@
 
 
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
 
 <div class="container_12">
   <%= yield %>
