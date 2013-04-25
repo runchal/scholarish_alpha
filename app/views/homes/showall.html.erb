@@ -6,7 +6,7 @@
   <% @homes.reverse_each do |home| %>
     <p><%= home.home_text %></p>
     <p><%= link_to 'Permalink', home %>
-    <%= link_to 'Edit This' %>
+    <%= link_to 'Edit This', edit_home_path(home) %>
     <%= home.updated_at %></p>
   </br>
   <% end %>
